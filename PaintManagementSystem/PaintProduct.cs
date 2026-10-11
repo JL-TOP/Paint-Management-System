@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.CompilerServices;
 
 namespace PaintManagementSystem;
 
@@ -22,15 +23,20 @@ public class PaintProduct : IBuyable
 
     public decimal GetFinalPrice ()
     {
+        decimal finalPrice = Price * (1 - discount) * (1 + TaxRate);
         
+        return finalPrice;
     }
 
     public void DispalyInfo()
     {
-        
+        Console.WriteLine($"Name: {Name}");
+        Console.WriteLine($"Type: {Type}");
+        Console.WriteLine($"Specificatioin: {Specification}");
+        Console.WriteLine($"Price: ${Price}");
     }
 
-    public void GetMaxDiscount (int rate)
+    public void GetMaxDiscount (int rate, bool isOverridable)
     {
         
     }
