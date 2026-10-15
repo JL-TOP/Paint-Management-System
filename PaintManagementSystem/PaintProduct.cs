@@ -28,11 +28,11 @@ public class PaintProduct : IBuyable
         return finalPrice;
     }
 
-    public void DispalyInfo()
+    public void DisplayInfo()
     {
         Console.WriteLine($"Name: {Name}");
         Console.WriteLine($"Type: {Type}");
-        Console.WriteLine($"Specificatioin: {Specification}");
+        Console.WriteLine($"Specificatioin: {Specification.Color} {Specification.SizeInLiters}");
         Console.WriteLine($"Price: ${Price}");
     }
 

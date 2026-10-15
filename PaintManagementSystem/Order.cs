@@ -20,7 +20,7 @@ public class Order
 
     public void DisplayOrder()
     {
-        Console.WriteLine($"Product: {Product}");
+        Console.WriteLine($"Product: {Product.Name} {Product.Type}");
         Console.WriteLine($"Quantity: {Quantity}");
         Console.WriteLine($"Order created at: {CreatedAt}");
     }

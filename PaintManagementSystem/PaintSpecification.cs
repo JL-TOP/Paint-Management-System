@@ -17,6 +17,6 @@ public class PaintSpecification
     public void DisplaySpecification()
     {
         Console.WriteLine($"Color: {Color}");
-        Console.WriteLine($"Size: {SizeInLiters}");
+        Console.WriteLine($"Size: {SizeInLiters} liter");
     }
 }
