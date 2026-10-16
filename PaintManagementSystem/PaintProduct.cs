@@ -12,13 +12,17 @@ public class PaintProduct : IBuyable
     public PaintSpecification  Specification { get; set; }
     public decimal Price { get; set; }
 
-    public PaintProduct (string name, PaintType type, PaintSpecification specification, decimal price)
+    public PaintBrand Brand { get; set; }
+
+    public PaintProduct (string name, PaintType type, PaintSpecification specification, decimal price, PaintBrand? brand=null)
     {
         Name = name;
         Type = type;
         Specification = specification;
         Price = price;
         TaxRate = 0.1m;
+
+        Brand = brand ?? new PaintBrand("Unknown");
     }
 
     public decimal GetFinalPrice ()
@@ -33,6 +37,7 @@ public class PaintProduct : IBuyable
         Console.WriteLine($"Name: {Name}");
         Console.WriteLine($"Type: {Type}");
         Console.WriteLine($"Specificatioin: {Specification.Color} {Specification.SizeInLiters}");
+        Console.WriteLine($"Brand: {Brand.Name}");
         Console.WriteLine($"Price: ${Price}");
     }
 

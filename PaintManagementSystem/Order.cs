@@ -29,4 +29,11 @@ public class Order
     {
         Console.WriteLine($"Total price: {TotalPrice}");
     }
+
+    public decimal GetTotalOrderPrice()
+    {
+        
+        decimal totalOrderPrice = 10;
+        return  totalOrderPrice;
+    }
 }

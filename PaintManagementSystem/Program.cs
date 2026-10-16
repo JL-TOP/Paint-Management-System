@@ -10,9 +10,9 @@ public class Program
         PaintSpecification paint2 = new ("white", 30);
         PaintSpecification paint3 = new ("Green", 40);
 
-        PaintProduct good1 = new ("adx", PaintType.BaseCoat, paint1, 50);
-        PaintProduct good2 = new ("adx", PaintType.Glossy, paint2, 70);
-        PaintProduct good3 = new ("adx", PaintType.Matte, paint3, 90);
+        PaintProduct good1 = new ("window", PaintType.BaseCoat, paint1, 50);
+        PaintProduct good2 = new ("celling", PaintType.Glossy, paint2, 70);
+        PaintProduct good3 = new ("wall", PaintType.Matte, paint3, 90);
 
         Console.WriteLine("Display Product:");
         good1.DisplayInfo();
