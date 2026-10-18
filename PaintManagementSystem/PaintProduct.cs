@@ -36,7 +36,7 @@ public class PaintProduct : IBuyable
     {
         Console.WriteLine($"Name: {Name}");
         Console.WriteLine($"Type: {Type}");
-        Console.WriteLine($"Specificatioin: {Specification.Color} {Specification.SizeInLiters}");
+        Console.WriteLine($"Specificatioin: {Specification.Color}, {Specification.SizeInLiters} Liter");
         Console.WriteLine($"Brand: {Brand.Name}");
         Console.WriteLine($"Price: ${Price}");
     }
